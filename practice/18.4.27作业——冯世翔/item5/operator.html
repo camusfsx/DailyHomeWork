@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    function print(){
+        var a=10;
+        document.write(a+++(++a)+" <br />");
+        var a=10;
+        document.write(++a+(++a)+" <br />");
+        var a=10;
+        document.write(++a+(a++)+" <br />");
+        var a=10;
+        document.write(a+++(a++)+" <br />");
+        var a=10;
+        document.write(a--+(--a)+" <br />");
+        var a=10;
+        document.write(a++-(a--)+" <br />");
+        var a=1;
+        var b=--a&&a++;
+        document.write(b+" <br />");
+        var a=1;
+        var b=--a&&++a;
+        document.write(b+" <br />");
+        var a=1;
+        var b=a--&&a++;
+        document.write(b+" <br />");
+        var a=1;
+        var b=a--&&++a;
+        document.write(b+" <br />");
+        var a=1;
+        var b=--a||a++;
+        document.write(b+" <br />");
+        var a=1;
+        var b=--a||++a;
+        document.write(b+" <br />");
+        var a=1;
+        var b=a--||a++;
+        document.write(b+" <br />");
+        var a=1;
+        var b=a--||++a;
+        document.write(b);
+
+    }
+        
+    </script>
+</head>
+<body onload="print()">
+    <p>2018/4/27</p>
+</body>
+</html>

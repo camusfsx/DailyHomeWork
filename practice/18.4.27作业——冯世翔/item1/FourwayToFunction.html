@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function f1(s){
+            document.write(s);
+        }
+        var f2 = function (s){
+            document.write(s);
+        }
+        var f3 = function f3(s){
+            document.write(s);
+        } 
+        var f4 = new Function(
+            's',
+            ' document.write(s);'
+        );
+        function f5(){
+            f1('hello');
+            f2(',');
+            f3('world');
+            f4('!');
+        };
+        
+    </script>
+</head>
+<body onload="f5()">
+    <p>2018/4/27</p>
+</body>
+</html>

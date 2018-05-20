@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            width:100%;
+            height:700px;
+            border:1px solid black;
+            font-size:80px;
+            font-family: "yahei";
+        }
+    </style>
+    <script type="text/javascript">
+        function print(char){
+            var box = document.getElementById("box");
+            box.innerHTML=`先生${char}您好`;
+        }
+    </script>
+</head>
+<body>
+    <div id="box" class=''>wait</div>
+    <button onclick="print(1)">
+        <p>1</p>
+    </button>
+    <button onclick="print(2)">
+        <p>2</p>
+    </button>
+    <button onclick="print(3)">
+        <p>3</p>
+    </button>   
+</body>
+</html>
